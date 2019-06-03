@@ -43,6 +43,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Young'),
         elevation: 10.0,
+        centerTitle: true, //标题是否居中，默认为false
       ),
       body: ListView.builder(
         itemCount: posts.length,
