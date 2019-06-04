@@ -9,7 +9,7 @@ class BasicDemo extends StatelessWidget {
 
 class MyContainerDemo extends StatelessWidget {
   final String _pic =
-      'https://images.unsplash.com/flagged/photo-1554443883-83db889b4007?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80';
+      'https://images.unsplash.com/photo-1547780543-ea0e1c1ff79e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80';
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class MyContainerDemo extends StatelessWidget {
               alignment: Alignment.center,
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
-                  Colors.grey[100].withOpacity(0.3), BlendMode.hardLight))),
+                  Colors.grey[100].withOpacity(0.2), BlendMode.hardLight))),
 //      color: Colors.grey[100],
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -62,8 +62,8 @@ class MyContainerDemo extends StatelessWidget {
 //                  Color.fromRGBO(87, 124, 138, 1.0)
 //                ]),
                 gradient: LinearGradient(colors: [
-                  Color.fromRGBO(120, 125, 123, 1.0),
-                  Color.fromRGBO(33, 30, 85, 1.0),
+                  Color.fromRGBO(189, 192, 186, 1.0),
+                  Color.fromRGBO(101, 103, 101, 1.0),
                 ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           ),
         ],

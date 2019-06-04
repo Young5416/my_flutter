@@ -3,6 +3,7 @@ import './demo/draw_demo.dart';
 import './demo/bottom_navigation_bar_demo.dart';
 import './demo/listview_demo.dart';
 import './demo/basic_demo.dart';
+import './demo/layout_demo.dart';
 
 void main() => runApp(App());
 
@@ -21,7 +22,6 @@ class App extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -54,11 +54,7 @@ class Home extends StatelessWidget {
         body: TabBarView(children: <Widget>[
           ListViewDemo(),
           BasicDemo(),
-          Icon(
-            Icons.g_translate,
-            size: 128.0,
-            color: Colors.black12,
-          ),
+          LayoutDemo(),
         ]),
         drawer: DrawDemo(),
         bottomNavigationBar: BottomNavigationBarDemo(),
