@@ -4,6 +4,7 @@ import './demo/bottom_navigation_bar_demo.dart';
 import './demo/listview_demo.dart';
 import './demo/basic_demo.dart';
 import './demo/layout_demo.dart';
+import './demo/view_demo.dart';
 
 void main() => runApp(App());
 
@@ -25,7 +26,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
@@ -49,12 +50,14 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.local_activity)),
                 Tab(icon: Icon(Icons.verified_user)),
                 Tab(icon: Icon(Icons.g_translate)),
+                Tab(icon: Icon(Icons.view_quilt)),
               ]),
         ),
         body: TabBarView(children: <Widget>[
           ListViewDemo(),
           BasicDemo(),
           LayoutDemo(),
+          ViewDemo(),
         ]),
         drawer: DrawDemo(),
         bottomNavigationBar: BottomNavigationBarDemo(),

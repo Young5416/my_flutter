@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MyContainerDemo();
   }
 }
@@ -11,11 +10,10 @@ class LayoutDemo extends StatelessWidget {
 class MyContainerDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center, //排列方式
-        children: <Widget>[AspectRatioDemo()],
+        children: <Widget>[StackDemo()],
       ),
     );
   }
@@ -24,7 +22,6 @@ class MyContainerDemo extends StatelessWidget {
 class AspectRatioDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return AspectRatio(
       aspectRatio: 16.0 / 9.0,
       child: Container(
@@ -37,7 +34,6 @@ class AspectRatioDemo extends StatelessWidget {
 class StackDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Stack(
       alignment: Alignment.topLeft,
       children: <Widget>[

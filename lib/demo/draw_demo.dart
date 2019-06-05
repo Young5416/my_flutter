@@ -19,7 +19,7 @@ class DrawDemo extends StatelessWidget {
                   color: Colors.blueGrey[400],
                   image: DecorationImage(
                       image: NetworkImage(
-                          'https://images.unsplash.com/photo-1559530259-cd011f67f2c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1130&q=80'),
+                          'https://images.unsplash.com/photo-1533359856343-b66cefc8bdd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'),
                       fit: BoxFit.cover,
                       colorFilter: ColorFilter.mode(
                           Colors.grey[400].withOpacity(0.5),

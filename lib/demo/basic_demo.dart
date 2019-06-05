@@ -13,7 +13,6 @@ class MyContainerDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
@@ -75,7 +74,6 @@ class MyContainerDemo extends StatelessWidget {
 class RichTextDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return RichText(
       text: TextSpan(
           text: ('Young'),
@@ -106,7 +104,6 @@ class TextDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Text(
       '$_author---$_test对于这些在过渡中切换的类名来说，如果你使用一个没有名字的 <transition>，则 v- 是这些类名的默认前缀。如果你使用了 <transition name="my-transition">，那么 v-enter 会替换为 my-transition-enter。',
       textAlign: TextAlign.left,
