@@ -7,6 +7,7 @@ import './demo/layout_demo.dart';
 import './demo/sliver_demo.dart';
 import './demo/view_demo.dart';
 import './demo/navigator_demo.dart';
+import './demo/fron_demo.dart';
 
 void main() => runApp(App());
 
@@ -14,21 +15,22 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: false,
 //      home: NavigatorDemo(),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => Home(),
-        '/navigator': (context) => NavigatorDemo(),
-        '/about': (context) => Page(
-              title: '/about',
-            )
-      },
-      theme: ThemeData(
-          primarySwatch: Colors.blueGrey,
-          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-          splashColor: Colors.white70),
-    );
+        initialRoute: '/from',
+        routes: {
+          '/': (context) => Home(),
+          '/navigator': (context) => NavigatorDemo(),
+          '/about': (context) => Page(
+                title: '/about',
+              ),
+          '/from': (context) => FromDemo(),
+        },
+        theme: ThemeData(
+            primarySwatch: Colors.blueGrey,
+            highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+            splashColor: Colors.white70,
+            accentColor: Color.fromRGBO(3, 54, 255, 1.0)));
   }
 }
 
