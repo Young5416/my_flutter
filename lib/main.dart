@@ -10,6 +10,7 @@ import './demo/navigator_demo.dart';
 import './demo/fron_demo.dart';
 import './demo/material_components.dart';
 import 'demo/animation/animation_demo.dart';
+import 'demo/http/http_demo.dart';
 
 void main() => runApp(App());
 
@@ -19,7 +20,7 @@ class App extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
 //      home: NavigatorDemo(),
-        initialRoute: '/animation',
+        initialRoute: '/http',
         routes: {
           '/': (context) => Home(),
           '/navigator': (context) => NavigatorDemo(),
@@ -28,6 +29,7 @@ class App extends StatelessWidget {
               ),
           '/from': (context) => FromDemo(),
           '/mdc': (context) => MaterialComponents(),
+          '/http': (context) => HttpDemo(),
           '/animation': (context) => AnimationDemo(),
         },
         theme: ThemeData(
